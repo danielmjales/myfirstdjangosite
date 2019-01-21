@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+  /* tira as margins e os paddings do proprio browser */
+  margin: 0;
+  padding: 0;
+  /* 
+    BOX-SIZING: BORDER-BOX -> por default o pading e o border nao 
+    sao considerados no width e no heigth. Apenas o content eh levado 
+    em considerecao.
+    O truque do border-box eh que ele considera tudo isso 
+    AAAAAAAAAAAAAAAAAAAAA eu amei 
+    */
+  box-sizing: inherit;
+}
+body {
+  font-family: "IM Fell Double Pica SC", serif;
+  color: white;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+.inicio {
+  background-image: url('../images/rapaz.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.texto-sombreado {
+  text-shadow: 3px 3px 4px #5b6ba5;
+}
+
+.btn-jbt {
+  padding: 5px 60px;
+  font-size: 24px;
+}
+.alinharH1 {
+  padding-top: 3rem;
+}
+
+.alinharDireita {
+  text-align: right;
+}
+
+.alinharEsquerda {
+  text-align: left;
+}
+
+.alinharCentro {
+  text-align: center;
+}
+
+.secondary-text {
+  margin-top: 3rem;
+}
+
+.about {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.col-6 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.about-container {
+  max-width: 1200px;
+  color: black;
+}
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 45%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.05rem;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 0.5rem;
+}
+.composition__photo:hover {
+  outline: 0.5rem solid #01b7ff;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.composition__photo--p1 {
+  left: 5%;
+  top: 0;
+}
+.composition__photo--p2 {
+  left: 50%;
+  top: 4rem;
+}
+.composition__photo--p3 {
+  left: 10%;
+  top: 10rem;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.9);
+}
+
+.card {
+  color: black;
+  box-shadow: 8px 8px 3px #323251;
+  transition: all 0.5s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 5px #26263d;
+  background-color: #01B7FF;
+}
+.grupo-1-sobre {
+  color: black;
+  max-width: 1200px;
+}
+
+.container-stilizado {
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.fas {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+}
+
+.far {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+}
+
+.fab {
+  text-align: center;
+  font-size: 50px;
+}
+
+.formulario {
+  background-color: rgb(1, 11, 29);
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  clip-path: polygon(0 0, 45% 0, 50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%);
+  background-size: cover;
+}
+.ajeita-top {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: white;
+}
+.card-formulario {
+}
+
+hr {
+  margin: 0 auto;
+  height: 2px;
+  border: none;
+  color: white;
+  background-color: white;
+  max-width: 15rem;
+}
+
+.rodape {
+  background-color: rgb(1, 11, 29);
+  color: white;
+  font-size: 12px;
+}
+
+.pergunta-rodape {
+  font-size: 25px;
+  color: white;
+  margin: 0 auto;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #26263d;
+  padding: 0.3rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.btn-text:hover {
+  background-color: #01b7ff;
+  color: #fff;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.btn-text:active {
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+.btn-text-2:link,
+.btn-text-2:visited {
+  margin-top: 5px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #26263d;
+  padding: 0.3rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.btn-text-2:hover {
+  background-color: #01b7ff;
+  color: #fff;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.btn-text-2:active {
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+.btn-text-3:link,
+.btn-text-3:visited {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #01b7ff;
+  padding: 0.3rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.btn-text-3:hover {
+  background-color: #01b7ff;
+  color: #fff;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.btn-text-3:active {
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+
+.contact{
+  
+  background-color: rgba(0,0,0);
+  width: 100vw;
+  height: 100vh;
+}
+

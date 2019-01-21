@@ -1,0 +1,148 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+  {% block content %}
+
+    <section class ="inicio">
+        <div class="container">
+            <div class="alinharDireita">
+              <h1 class="alinharH1">Daniel Menescal Jales</h1>
+            </div>
+            <div class="alinharEsquerda texto-sombreado">
+              <p class="lead">Front-end developer and web developer enthusiast</p>
+            </div>
+        </div>
+
+        <div class = "container secondary-text">
+            <div class = "alinharCentro">
+                <h3>Hey there. Nice to meet you</h3>
+                <p>  
+                  I am Daniel and I am willing to work with you. I am a computer engineer student based
+                  in Natal, Brazil. I love to work on web systems and design. If that is what 
+                  you are you looking for, do not hesitate to contact me. I would love to know 
+                  more about your project.
+                </p>
+                <a href="{% url 'contact' %}" class="btn-text"></spa n>Send me an email &rarr;</span></a>
+              </div>
+        </div>
+      
+    </section>
+    <section class="about">
+      <div class ="container about-container">
+        <h1 class="alinharCentro">About me</h1>
+        <div class="row sobre-paragrafo alinharCentro">
+          <div class="col-6 alinharCentro">
+            <h1>What's up, everybody?</h1>
+            <p class="sobre-paragrafo">
+              My name is Daniel and I am ALMOST a computer engineer. I will get my degree 
+              in February 2019, if everything goes as I planned. I will move to US when I 
+              am done with college. Some of my hobbies are traveling, finding new cafeterias
+              around so that I can try new kind of coffees and reading of course, because I
+              am little bit nerd.
+            </p>
+            <h1>Do you want to know more about my projects?</h1>
+            <p>
+              Follow me on gitHub and check my other projects. If you have any questions
+              feel free to ask me.
+            </p>
+            <a href="#" class="btn-text-3"></span>Follow me &rarr;</span></a>
+          </div>
+          <div class="col-6">
+              <div class="composition">
+                  <img src="{% static 'pages/images/castle.jpg' %}" alt="Photo 1" class="composition__photo composition__photo--p1">
+                  <img src="{% static 'pages/images/traveler.jpg' %}" alt="Photo 1" class="composition__photo composition__photo--p2">
+                  <img src="{% static 'pages/images/coffee.jpg' %}" alt="Photo 1" class="composition__photo composition__photo--p3">
+              </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class ="sobre-2">
+        <div class="container grupo-1-sobre alinharCentro">
+          <h1>How can I help you today?</h1>
+            <div class="card-deck">
+                <div class="card">
+                  <i class="fas fa-sitemap"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Web Systems</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <i class="fas fa-shopping-cart"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">E-commerce</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <i class="fas fa-images"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Blogs</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-stilizado alinharCentro">    
+            <div class="card-deck">
+                <div class="card">
+                  <i class="far fa-file-alt"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Landing pages</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <i class="fas fa-laptop-code"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Templates</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <i class="fas fa-screwdriver"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Support</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "projects">
+      
+    </section>
+    <section class="formulario">
+          <div class="container alinharCentro">
+              <h1 class = "ajeita-top">CONTACT</h1>
+              <p class ="pergunta-rodape">
+                Do you have a project in mind?
+              </p>
+              <hr /> 
+          </div>
+          <div class="alinharCentro ">
+            <a href="{% url 'contact' %}" class="btn-text-2">Send me an email &rarr;</a>
+          </div> 
+    </section>
+    <section class="rodape">
+      <div class="alinharCentro">
+        @2018 Daniel Menescal Jales. All rights reserved.
+      </div>
+      <div class="alinharCentro">
+        Made with coffee in Brazil.
+      </div>
+    </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  {% endblock %}

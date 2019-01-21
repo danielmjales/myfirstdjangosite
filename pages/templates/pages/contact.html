@@ -1,0 +1,22 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+<section class = "contact">
+        <div class = "container alinharCentro">
+            <h3>Send me a message</h3>
+            <p>
+                Go ahead and text me, introduce yourself and tell
+                me more about your project. I usually look up my 
+                email every day, so I will respond you in 1 or 2 days.
+            </p>
+            <h2>New post</h2>
+            <form method="POST" class="post-form">{% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="save btn btn-default">Save</button>
+            </form>
+        </div>
+</section>
+
+{% endblock %}
+
+
+    
